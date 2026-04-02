@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="128" height="128">
+  <!-- Rounded dark background -->
+  <rect width="128" height="128" rx="20" ry="20" fill="#1a1a2e"/>
+
+  <!-- Branch/fork icon in indigo -->
+  <g fill="none" stroke="#6366f1" stroke-width="8" stroke-linecap="round" stroke-linejoin="round">
+    <!-- Main vertical trunk -->
+    <line x1="64" y1="100" x2="64" y2="40"/>
+
+    <!-- Left branch -->
+    <path d="M64 60 Q50 60 42 48"/>
+
+    <!-- Right branch -->
+    <path d="M64 60 Q78 60 86 48"/>
+
+    <!-- Node circles -->
+    <circle cx="64" cy="100" r="8" fill="#6366f1"/>
+    <circle cx="42" cy="40" r="8" fill="#6366f1"/>
+    <circle cx="86" cy="40" r="8" fill="#6366f1"/>
+    <circle cx="64" cy="28" r="8" fill="#6366f1"/>
+  </g>
+
+  <!-- Top continuation from trunk -->
+  <line x1="64" y1="40" x2="64" y2="28" stroke="#6366f1" stroke-width="8" stroke-linecap="round"/>
+</svg>
