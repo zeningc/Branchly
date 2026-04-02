@@ -1,6 +1,19 @@
-# Branchly
+<p align="center">
+  <img src="public/icons/logo.svg" alt="Branchly" width="400" />
+</p>
 
-Branch off ChatGPT and Gemini conversations into a tree of explorations.
+<p align="center">
+  <strong>Branch off ChatGPT and Gemini conversations into a tree of explorations.</strong>
+</p>
+
+<p align="center">
+  <a href="#install-from-source">Install</a> &middot;
+  <a href="#how-it-works">How It Works</a> &middot;
+  <a href="#features">Features</a> &middot;
+  <a href="#contributing">Contributing</a>
+</p>
+
+---
 
 When you're reading an AI response and get confused by a specific part, select the text, type your question, and Branchly opens a new thread with full context — without polluting your original conversation.
 
