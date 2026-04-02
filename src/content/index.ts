@@ -4,7 +4,7 @@ import { getPlatform } from "./selectors";
 import { showToast } from "./toast";
 
 const platform = getPlatform();
-console.log(`[DeepDive] Content script loaded on ${platform}`);
+console.log(`[Branchly] Content script loaded on ${platform}`);
 
 // Listen for messages from background script
 chrome.runtime.onMessage.addListener(
@@ -29,7 +29,7 @@ chrome.runtime.onMessage.addListener(
 );
 
 // Expose functions for the background script to call via executeScript
-(window as any).__deepdive = {
+(window as any).__branchly = {
   clickNewChat,
   typeAndSend,
   platform,

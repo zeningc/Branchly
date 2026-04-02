@@ -25,7 +25,7 @@ export async function typeAndSend(text: string): Promise<void> {
 
   const textarea = await waitForElement<HTMLElement>(selectors.promptTextarea);
   if (!textarea) {
-    console.error("[DeepDive] Could not find prompt textarea");
+    console.error("[Branchly] Could not find prompt textarea");
     return;
   }
 
@@ -105,7 +105,7 @@ async function waitForElement<T extends Element>(
     if (el) return el;
     await sleep(100);
   }
-  console.warn(`[DeepDive] Timeout waiting for element: ${selector}`);
+  console.warn(`[Branchly] Timeout waiting for element: ${selector}`);
   return null;
 }
 

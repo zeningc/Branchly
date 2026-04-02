@@ -1,12 +1,12 @@
 {
-  "name": "deepdive",
+  "name": "branchly",
   "version": "0.1.0",
   "private": true,
   "type": "module",
   "scripts": {
     "dev": "vite build --watch",
     "build": "tsc && vite build",
-    "zip": "npm run build && cd dist && zip -r ../deepdive.zip . -x '*/generate_icons.py' '*/icon.svg' '*/src/*'"
+    "zip": "npm run build && cd dist && zip -r ../branchly.zip . -x '*/generate_icons.py' '*/icon.svg' '*/src/*'"
   },
   "dependencies": {
     "idb": "^8.0.1",

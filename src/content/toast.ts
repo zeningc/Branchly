@@ -3,7 +3,7 @@ let toastContainer: HTMLElement | null = null;
 function getContainer(): HTMLElement {
   if (!toastContainer) {
     toastContainer = document.createElement("div");
-    toastContainer.id = "deepdive-toast-container";
+    toastContainer.id = "branchly-toast-container";
     Object.assign(toastContainer.style, {
       position: "fixed",
       bottom: "20px",

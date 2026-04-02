@@ -14,7 +14,7 @@ export function App() {
   const [searchQuery, setSearchQuery] = useState("");
   const [isDark, setIsDark] = useState(() => {
     // Persist theme preference
-    const saved = localStorage.getItem("deepdive-theme");
+    const saved = localStorage.getItem("branchly-theme");
     return saved !== "light";
   });
 
@@ -23,7 +23,7 @@ export function App() {
   const toggleTheme = () => {
     setIsDark((prev) => {
       const next = !prev;
-      localStorage.setItem("deepdive-theme", next ? "dark" : "light");
+      localStorage.setItem("branchly-theme", next ? "dark" : "light");
       return next;
     });
   };
@@ -122,7 +122,7 @@ export function App() {
               <circle cx="6" cy="18" r="3" />
               <path d="M18 9a9 9 0 0 1-9 9" />
             </svg>
-            DeepDive
+            Branchly
           </h1>
 
           {/* Theme toggle */}

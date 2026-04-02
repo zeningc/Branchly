@@ -200,7 +200,7 @@ async function handleBranch(
     await chrome.scripting.executeScript({
       target: { tabId },
       func: async () => {
-        await (window as any).__deepdive.clickNewChat();
+        await (window as any).__branchly.clickNewChat();
       },
     });
 
@@ -210,7 +210,7 @@ async function handleBranch(
     await chrome.scripting.executeScript({
       target: { tabId },
       func: async (prompt: string) => {
-        await (window as any).__deepdive.typeAndSend(prompt);
+        await (window as any).__branchly.typeAndSend(prompt);
       },
       args: [fullPrompt],
     });

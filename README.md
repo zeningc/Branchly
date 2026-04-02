@@ -1,8 +1,8 @@
-# DeepDive
+# Branchly
 
 Branch off ChatGPT and Gemini conversations into a tree of explorations.
 
-When you're reading an AI response and get confused by a specific part, select the text, type your question, and DeepDive opens a new thread with full context — without polluting your original conversation.
+When you're reading an AI response and get confused by a specific part, select the text, type your question, and Branchly opens a new thread with full context — without polluting your original conversation.
 
 ## The Problem
 
@@ -11,13 +11,13 @@ When learning with ChatGPT or Gemini, you often want to ask a follow-up about a 
 1. **Reply in the same chat** — pollutes the conversation. After 5-10 side questions, you have to scroll way up to find where you left off.
 2. **Open a new chat** — loses all context. Copy-pasting is impractical for long conversations.
 
-DeepDive gives you a third option: **branch**.
+Branchly gives you a third option: **branch**.
 
 ## How It Works
 
 1. **Select text** in any ChatGPT or Gemini response
 2. Click **Branch** and type your question
-3. DeepDive opens a new chat with your question + the relevant context, automatically
+3. Branchly opens a new chat with your question + the relevant context, automatically
 4. Your branches form a **tree** in the side panel — navigate, rename, search, and manage them
 
 Branches can be nested: branch from a branch, creating a tree of exploration that you can always navigate back through.
@@ -40,8 +40,8 @@ Branches can be nested: branch from a branch, creating a tree of exploration tha
 
 1. Clone this repo:
    ```bash
-   git clone https://github.com/YOUR_USERNAME/DeepDive.git
-   cd DeepDive
+   git clone https://github.com/YOUR_USERNAME/Branchly.git
+   cd Branchly
    ```
 
 2. Install dependencies and build:
@@ -63,7 +63,7 @@ npm run dev    # Watch mode — rebuilds on file changes
 npm run build  # Production build
 ```
 
-After making changes, click the refresh icon on DeepDive in `chrome://extensions/` and reload the ChatGPT/Gemini page.
+After making changes, click the refresh icon on Branchly in `chrome://extensions/` and reload the ChatGPT/Gemini page.
 
 ## Architecture
 

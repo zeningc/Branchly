@@ -1,6 +1,6 @@
 {
   "manifest_version": 3,
-  "name": "DeepDive",
+  "name": "Branchly",
   "version": "0.1.0",
   "description": "Branch off ChatGPT and Gemini conversations into a tree of explorations",
   "permissions": [
@@ -16,7 +16,7 @@
     "https://gemini.google.com/*"
   ],
   "action": {
-    "default_title": "Open DeepDive",
+    "default_title": "Open Branchly",
     "default_icon": {
       "16": "icons/icon16.png",
       "48": "icons/icon48.png",

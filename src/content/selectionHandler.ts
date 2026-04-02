@@ -75,7 +75,7 @@ function showBranchButton(x: number, y: number, selectedText: string) {
   removeFloatingUI();
 
   floatingUI = document.createElement("div");
-  floatingUI.id = "deepdive-floating-ui";
+  floatingUI.id = "branchly-floating-ui";
   Object.assign(floatingUI.style, {
     position: "fixed",
     left: `${Math.min(x + 10, window.innerWidth - 360)}px`,
@@ -95,7 +95,7 @@ function renderBranchButton(
   y: number
 ) {
   container.innerHTML = `
-    <button id="deepdive-branch-trigger" style="
+    <button id="branchly-branch-trigger" style="
       background: #6366f1;
       color: white;
       border: none;
@@ -121,7 +121,7 @@ function renderBranchButton(
     </button>
   `;
 
-  container.querySelector("#deepdive-branch-trigger")!.addEventListener("click", () => {
+  container.querySelector("#branchly-branch-trigger")!.addEventListener("click", () => {
     expandToQuestionInput(container, selectedText, x, y);
   });
 }
@@ -161,7 +161,7 @@ function expandToQuestionInput(
           <circle cx="6" cy="18" r="3"></circle>
           <path d="M18 9a9 9 0 0 1-9 9"></path>
         </svg>
-        DeepDive Branch
+        Branchly
       </div>
       <div style="
         background: #2a2a3e;
@@ -177,7 +177,7 @@ function expandToQuestionInput(
       ">
         "${selectedText.length > 120 ? selectedText.slice(0, 120) + "..." : selectedText}"
       </div>
-      <textarea id="deepdive-question-input" placeholder="What's your question about this?" style="
+      <textarea id="branchly-question-input" placeholder="What's your question about this?" style="
         width: 100%;
         background: #2a2a3e;
         border: 1px solid #3a3a5e;
@@ -192,7 +192,7 @@ function expandToQuestionInput(
         line-height: 1.4;
       "></textarea>
       <div style="display: flex; gap: 8px; margin-top: 8px; justify-content: flex-end;">
-        <button id="deepdive-cancel-btn" style="
+        <button id="branchly-cancel-btn" style="
           background: transparent;
           border: 1px solid #3a3a5e;
           color: #9ca3af;
@@ -201,7 +201,7 @@ function expandToQuestionInput(
           font-size: 12px;
           cursor: pointer;
         ">Cancel</button>
-        <button id="deepdive-submit-btn" style="
+        <button id="branchly-submit-btn" style="
           background: #6366f1;
           border: none;
           color: white;
@@ -216,7 +216,7 @@ function expandToQuestionInput(
     </div>
   `;
 
-  const input = container.querySelector("#deepdive-question-input") as HTMLTextAreaElement;
+  const input = container.querySelector("#branchly-question-input") as HTMLTextAreaElement;
   input.focus();
 
   // Submit on Enter (without Shift)
@@ -227,11 +227,11 @@ function expandToQuestionInput(
     }
   });
 
-  container.querySelector("#deepdive-cancel-btn")!.addEventListener("click", () => {
+  container.querySelector("#branchly-cancel-btn")!.addEventListener("click", () => {
     removeFloatingUI();
   });
 
-  container.querySelector("#deepdive-submit-btn")!.addEventListener("click", () => {
+  container.querySelector("#branchly-submit-btn")!.addEventListener("click", () => {
     submitBranch(selectedText, input.value.trim());
   });
 }

@@ -1,7 +1,7 @@
 import { openDB, type IDBPDatabase } from "idb";
 import type { TreeNode } from "../types";
 
-const DB_NAME = "deepdive";
+const DB_NAME = "branchly";
 const DB_VERSION = 1;
 const STORE_NAME = "nodes";
 
