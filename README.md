@@ -40,7 +40,7 @@ Branches can be nested: branch from a branch, creating a tree of exploration tha
 
 1. Clone this repo:
    ```bash
-   git clone https://github.com/YOUR_USERNAME/Branchly.git
+   git clone https://github.com/zeningc/Branchly.git
    cd Branchly
    ```
 
