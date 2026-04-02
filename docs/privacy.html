@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Branchly - Privacy Policy</title>
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      max-width: 680px;
+      margin: 0 auto;
+      padding: 40px 20px;
+      color: #1f2937;
+      line-height: 1.7;
+    }
+    h1 { font-size: 28px; margin-bottom: 8px; }
+    h2 { font-size: 20px; margin-top: 32px; }
+    p { margin: 12px 0; }
+    .updated { color: #6b7280; font-size: 14px; }
+  </style>
+</head>
+<body>
+  <h1>Branchly Privacy Policy</h1>
+  <p class="updated">Last updated: April 1, 2026</p>
+
+  <h2>Overview</h2>
+  <p>Branchly is a Chrome extension that helps you branch off ChatGPT and Gemini conversations into new contextual threads. Your privacy is important to us, and Branchly is designed to be fully local and private by default.</p>
+
+  <h2>Data Collection</h2>
+  <p>Branchly does <strong>not</strong> collect, transmit, or share any user data. Specifically:</p>
+  <ul>
+    <li>No personal information is collected</li>
+    <li>No analytics or tracking tools are used</li>
+    <li>No data is sent to any server or third party</li>
+    <li>No cookies are set by the extension</li>
+  </ul>
+
+  <h2>Data Storage</h2>
+  <p>All data created by Branchly (your branch tree, conversation context, and preferences) is stored <strong>locally in your browser</strong> using IndexedDB and Chrome's storage API. This data never leaves your device.</p>
+
+  <h2>Website Access</h2>
+  <p>Branchly only operates on the following websites:</p>
+  <ul>
+    <li>chatgpt.com</li>
+    <li>chat.openai.com</li>
+    <li>gemini.google.com</li>
+  </ul>
+  <p>The extension reads conversation content on these sites solely to provide context when creating a new branch. It does not access, read, or interact with any other websites.</p>
+
+  <h2>Permissions</h2>
+  <p>Branchly requests the minimum permissions necessary to function:</p>
+  <ul>
+    <li><strong>sidePanel</strong> — to display the branch tree navigation panel</li>
+    <li><strong>activeTab & scripting</strong> — to read selected text and automate creating new chat threads</li>
+    <li><strong>storage</strong> — to persist extension state across browser sessions</li>
+    <li><strong>tabs</strong> — to navigate to branch conversations when clicked</li>
+  </ul>
+
+  <h2>Changes</h2>
+  <p>If this privacy policy changes, the updated version will be posted here with a new "last updated" date.</p>
+
+  <h2>Contact</h2>
+  <p>If you have questions about this privacy policy, please open an issue on <a href="https://github.com/zeningc/Branchly">GitHub</a>.</p>
+</body>
+</html>
